@@ -3,7 +3,7 @@ import {Box} from "@/components/ui/box"
 
 
 interface HeaderProps {
-label: string
+label: string | undefined
 }
 
 const Header = ({label}: HeaderProps) => {

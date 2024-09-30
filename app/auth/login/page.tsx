@@ -4,7 +4,7 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <Flex className='flex-col items-center justify-center h-full border-2 border-red-500'>
+    <Flex className='flex-col items-center justify-center h-screen'>
  <LoginForm/>
     </Flex>
   )
