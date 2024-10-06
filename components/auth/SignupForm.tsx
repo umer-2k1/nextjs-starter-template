@@ -34,12 +34,14 @@ const [success, setSuccess] = useState<string>("")
     }
   })
 
-
   const onSubmit = (values: z.infer<typeof RegisterSchema>) => {
     startTransition(() => {
       register(values).then((data: any)=>{
         setError(data?.error!)
         setSuccess(data?.success!)
+        if (data?.success) {
+          form.reset(); 
+        }
       })
     }) 
   }
