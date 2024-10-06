@@ -31,7 +31,7 @@ const [success, setSuccess] = useState<string>("")
     resolver: zodResolver(LoginSchema),
     defaultValues:{
       email: "",
-      password: ""
+      password: "123456"
     }
   })
 
