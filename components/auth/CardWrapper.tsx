@@ -38,34 +38,9 @@ const CardWrapper = ({
         </CardFooter>
       )}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                                                                                         <CardFooter>
-                     <BackButton label={backButtonLabel} to={backButtonhref} />
-                            </CardFooter>
+      <CardFooter>
+        <BackButton label={backButtonLabel} to={backButtonhref} />
+      </CardFooter>
     </Card>
   );
 };
