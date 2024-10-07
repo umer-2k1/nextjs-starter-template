@@ -15,6 +15,21 @@ signIn(provider, {callbackUrl: DEFAULT_LOGIN_REDIRECT})
 
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   return (
     <Flex className='items-center w-full gap-x-2'>
         <Button size={"lg"} className='w-full' variant={"outline"} onClick={()=> onClickHandler("google")}>

@@ -1,19 +1,20 @@
-import React from 'react'
-import {Box} from "@/components/ui/box" 
-
+import React from 'react';
+import { Box } from '@/components/ui/box';
 
 interface HeaderProps {
-label: string | undefined
+  label: string | undefined;
 }
 
-const Header = ({label}: HeaderProps) => {
+const Header = ({ label }: HeaderProps) => {
   return (
-    <Box className='flex flex-col gap-y-4 items-center justify-center'>
+    <Box className="flex flex-col gap-y-4 items-center justify-center">
+      <h1 className="text-3xl font-semibold text-black drop-shadow-md">
+        🔐 Auth
+      </h1>
 
-      <h1 className="text-3xl font-semibold text-black drop-shadow-md">🔐 Auth</h1>
-      <p className='text-muted-foreground text-sm'>{label}</p>
+      <p className="text-muted-foreground text-sm">{label}</p>
     </Box>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
