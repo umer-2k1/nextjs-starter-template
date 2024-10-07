@@ -1,3 +1,4 @@
+import { auth } from '@/auth';
 import prisma from '@/lib/prisma';
 export const getUserByEmail = async (email: string) => {
   try {
@@ -23,4 +24,14 @@ export const getUserById = async (id: string) => {
   } catch (error) {
     return null;
   }
+};
+
+export const currentUser = async () => {
+  const session = await auth();
+  return session?.user;
+};
+
+export const currentRole = async () => {
+  const session = await auth();
+  return session?.user?.role;
 };
